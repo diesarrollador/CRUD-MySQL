@@ -9,4 +9,13 @@ mydb = mysql.connector.connect(
 )
 
 def eliminar():
-    pass
+    try:
+        mycursor = mydb.cursor()
+        cedula = input("\nIngrese la cédula del cliente a eliminar: ")
+        sql = "DELETE FROM datos WHERE cedula = '{}'".format(cedula)
+        mycursor.execute(sql)
+        mydb.commit()
+        print("\nCliente eliminado exitosamente")
+        
+    except ImportError():
+        print('Ha ocurrido un erro')

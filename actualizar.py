@@ -19,8 +19,6 @@ def actualizar():
         sql = "UPDATE datos SET nombre = '{}', correo = '{}', provincia = '{}' WHERE cedula = '{}'".format(nombre, correo, provincia, cedula)
         mycursor.execute(sql)
         mydb.commit()
-        #mycursor.close()
-        #mydb.close()
         print('\nDatos actualizados correctamente!\n')
         
     except ImportError():

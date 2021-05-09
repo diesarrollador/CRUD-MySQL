@@ -18,8 +18,6 @@ def mostrar():
         myresult = mycursor.fetchall()
         for i in myresult:
             print("cedula:",i[0], "Nombre:",i[1], "Correo:",i[2], "Provincia:",i[3])
-        #mycursor.close()
-        #mydb.close()
             
     except ImportError():
         print('Ha ocurrido un problema')

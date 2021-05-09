@@ -16,6 +16,7 @@ class Principal():
                 mostrar.mostrar()
                 actualizar.actualizar()
             elif select == '4':
+                mostrar.mostrar()
                 eliminar.eliminar()
             elif select == '5':
                 break

@@ -26,5 +26,5 @@ def insertar():
         #mydb.close()
         print('\nDatos insertados correctamente!\n')
         
-    except mysql.connector.ERROR as err:
-        print("Algo ha ido mal: {}".format(err))
+    except ImportError():
+        print("Algo ha ido mal")
